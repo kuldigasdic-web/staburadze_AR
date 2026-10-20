@@ -32,7 +32,7 @@
 
     <!-- filterMinCF: 1 un filterBeta: 10 noņem aizturi, liekot bildei uzreiz sekot kustībai -->
     <a-scene 
-      mindar-image="imageTargetSrc: baznicas.mind; filterMinCF: 1; filterBeta: 5; missTolerance: 2; warmupTolerance: 2; uiLoading: no; uiScanning: no;" 
+      mindar-image="imageTargetSrc: staburadze1.mind; filterMinCF: 1; filterBeta: 5; missTolerance: 2; warmupTolerance: 2; uiLoading: no; uiScanning: no;" 
       color-space="sRGB" 
       renderer="colorManagement: true, physicallyCorrectLights: false" 
       vr-mode-ui="enabled: false" 
@@ -43,7 +43,7 @@
       <a-entity id="ar-target" mindar-image-target="targetIndex: 0">
         <a-image 
           id="ar-image"
-          src="baznicas.jpeg" 
+          src="Staburadz.jpeg" 
           position="0 0 0.05" 
           rotation="0 0 0">
         </a-image>
@@ -58,7 +58,7 @@
 
       // Automātiski nolasa bildes proporcijas, lai nekas netiktu apgriezts
       const img = new Image();
-      img.src = 'baznicas.jpeg';
+      img.src = 'Staburadz.jpeg';
       img.onload = () => {
         const ratio = img.naturalWidth / img.naturalHeight;
         arImage.setAttribute('width', ratio);
